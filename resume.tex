@@ -1,0 +1,159 @@
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} 
+\usepackage{linespacing_fix}
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+%***"%"后面的所有内容是注释而非代码，不会输出到最后的PDF中
+%***使用本模板，只需要参照输出的PDF，在本文档的相应位置做简单替换即可
+%***修改之后，输出更新后的PDF，只需要点击Overleaf中的“Recompile”按钮即可
+
+%在大括号内填写其他信息，最多填写4个，但是如果选择不填信息，
+%那么大括号必须空着不写，而不能删除大括号。
+%\otherInfo后面的四个大括号里的所有信息都会在一行输出
+%如果想要写两行，那就用两次这个指令（\otherInfo{}{}{}{}）即可
+
+
+%***********个人信息**************
+\MyName{\textbf{XXX}}
+
+
+\begin{tabular}{ll}
+{\color{Turquoise}{\faCalendar}}：19XX.0X(XXX 岁)&{\color{Cerulean}{\faPhoneSquare}} ：13XXXXXXXXX{\color{LimeGreen}{\faWeixin}}\\
+{\color{Red}{\faStar}}：XXXX&{\color{SeaGreen}{\faEnvelopeSquare}}：XXXXXXX.com\\
+{\color{Black}{\faGithub}}：\href{https://XXXXX}{https://XXX}&{\color{Plum}{\faHome}}：XX\ XX\\
+\end{tabular}
+
+%************照片**************
+%照片需要放到images文件夹下，名字必须是you.jpg，注意.jpg后缀（可以去resume.cls第101行处修改），如果不需要照片可以不添加此行命令
+%0.15的意思是，照片的宽度是页面宽度的0.15倍，调整大小，避免遮挡文字
+\yourphoto{0.08}
+
+%***********教育背景**************
+\section{教育背景\faGraduationCap}
+%***第一个大括号里的内容向左对齐，第二个大括号里的内容向右对齐
+%***\textbf{}括号里的字是粗体，\textit{}括号里的字是斜体
+
+\begin{tabularx}{\textwidth}{XlXXl}
+20XX.0X\ -\ 20XX.0X&\ \ \textbf{XXXX}（XXX）&\;\;\;\;\;\;\;\;\;\;\;\;XXX&\;\;\;\;\;\;XXX&XXX\\
+
+2018.09\ -\ 2022.06&\ \ \textbf{XXX}（XXX）&\;\;\;\;\;\;\;\;\;\;\;\;XXX&\;\;\;\;\;\;XXX&XXX\\
+
+\end{tabularx}
+
+%***********项目经历**************
+\section{项目经历\;\color{Violet}{\faAreaChart}}
+%*********项目一*********
+\begin{tabularx}{\textwidth}{lXl}
+\textbf{XXXX.0X\ -\ 至今}&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\textbf{XXXX\;\;\href{https://XXXXN}{\faConnectdevelop}}&\textbf{负责人}\\
+\end{tabularx}
+
+\begin{itemize}
+\item[\color{RawSienna}{\faFighterJet}]{\textbf{项目描述：} XXXX}
+
+\item[\color{RawSienna}{\faFighterJet}]{\textbf{主要技术：} XXXX}
+\end{itemize}
+
+%*********项目二*********
+\begin{tabularx}{\textwidth}{lXl}
+\textbf{2023.02\ -\ 2023.10}&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\textbf{XXX\;\;\href{XXX}{\faQq}}&\textbf{负责人}\\
+\end{tabularx}
+
+\begin{itemize}
+\item[\color{RawSienna}{\faFighterJet}]{\textbf{项目描述：}  XXX。}
+
+\item[\color{RawSienna}{\faFighterJet}]{\textbf{主要技术：} XXX。}
+\end{itemize}
+
+%*********项目三*********
+\begin{tabularx}{\textwidth}{lXl}
+\textbf{202a.0a\ -\ 202a.0a}&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\textbf{aaaaa\;\;\href{aaaa}{\faCalculator}}&\textbf{负责人}\\
+\end{tabularx}
+
+\begin{itemize}
+\item[\color{RawSienna}{\faFighterJet}]{\textbf{项目描述：}  aaaa。}
+
+\item[\color{RawSienna}{\faFighterJet}]{\textbf{主要技术：} aaaaa。}
+\end{itemize}
+
+%***********实习经历**************
+\section{实习经历\;\color{BurntOrange}{\faBriefcase}}
+%*********实习一*********
+\begin{tabularx}{\textwidth}{lXl}
+\textbf{20aa.0a\ -\ 20aa.aa}&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\textbf{aa\href{aa}{\faCar}}&\textbf{aaaa}\\
+\end{tabularx}
+
+\begin{itemize}
+\item[\color{RawSienna}{\faCheckCircleO}]{aaa；}
+
+\item[\color{RawSienna}{\faCheckCircleO}]{aaa；}
+
+\item[\color{RawSienna}{\faCheckCircleO}]{aaa；}
+
+\item[\color{RawSienna}{\faCheckCircleO}]{aaa；}
+\end{itemize}
+
+%***********实习二**************
+%\begin{tabularx}{\textwidth}{lXl}
+%\textbf{202a.0a\ -\ 202a.0a}&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\textbf{a）\faWifi}&\textbf{aaa}\\
+%\end{tabularx}
+
+%{\textbf{ 任务要求：}aaa。}
+
+%{\textbf{主要工作：} aaaa}
+
+%***********专业技能**************
+\section{专业技能\;\color{RoyalBlue}{\faLaptop}}
+
+\begin{itemize}
+\item[\color{RawSienna}{\faCode}]{aaa}
+
+\item[\color{RawSienna}{\faCode}]{sss}
+
+\item[\color{RawSienna}{\faCode}]{ddd；}
+
+\item[\color{RawSienna}{\faCode}]{fff；}
+
+\item[\color{RawSienna}{\faCode}]{fff；}
+
+\item[\color{RawSienna}{\faCode}]{ggg；}
+
+\item[\color{RawSienna}{\faCode}]{ggg；}
+
+\item[\color{RawSienna}{\faCode}]{hhh；}
+\end{itemize}
+
+%***********个人经历**************
+\section{个人经历\;\color{Goldenrod}{\faTrophy}}
+\datedsubsection{\textbf{研究生}:}{}
+\begin{tabularx}{\textwidth}{Xl}
+fff&fff\\
+fff&fff\\
+\end{tabularx}
+
+\datedsubsection{\textbf{本科}:}{}
+\begin{tabularx}{\textwidth}{llll}
+f&ff&fff&ffff\\
+f&ff4次&fff&ffff\\
+f4次&f&ff&fff\\
+f&Hf&H3f&fd\\
+\end{tabularx}\\\\
+
+
+%***********自我评价**************
+
+{\textbf{自我评价：}}
+{ffffffffffffffffffff。}
+
+\end{document}
